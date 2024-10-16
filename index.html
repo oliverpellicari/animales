@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de Animales</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo CSS -->
+</head>
+<body>
+  <div class="container">
+    <h1>Registro de Animales en el Refugio</h1>
+
+    <!-- Formulario para ingresar los datos del animal -->
+    <form id="animalForm" class="form">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required><br>
+
+      <label for="tipo">Tipo:</label>
+      <input type="text" id="tipo" name="tipo" required><br>
+
+      <label for="nacimiento">Año de nacimiento:</label>
+      <input type="number" id="nacimiento" name="nacimiento" required><br>
+
+      <button type="submit" class="btn">Registrar Animal</button>
+    </form>
+
+    <h2>Animales Registrados</h2>
+    <div id="animalList" class="animal-list"></div>
+  </div>
+
+  <!-- Archivos JS -->
+  <script src="animal.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
